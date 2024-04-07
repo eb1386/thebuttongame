@@ -110,8 +110,9 @@ body {
     z-index: 1000;
 }
 
-.info-icon .fa-circle-info {
+.info-icon .settings icon {
     font-size: 35px;
+    top: 20px;
 }
 
 .hidden {
