@@ -18,7 +18,7 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
-    font-size: 33px;
+ çç
     color: black;
     z-index: 1000;
 }
@@ -107,6 +107,7 @@ body {
     position: fixed;
     top: 32px;
     left: 20px;
+    font-size: 33px;
     z-index: 1000;
 }
 
