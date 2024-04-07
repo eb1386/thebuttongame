@@ -1,0 +1,150 @@
+body {
+    font-family: 'Baloo 2', cursive;
+    background-color: #F3E9DD;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameContainer {
+    position: relative;
+    text-align: center;
+}
+
+.settings-icon {
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 33px;
+    color: black;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+#settingsMenu {
+    position: fixed;
+    top: 65px;
+    right: 20px;
+    background: #F3E9DD;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+#settingsMenu button {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    background-color: #E6D5C3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#settingsMenu button:hover {
+    background-color: #D3C0B0;
+    color: white;
+}
+
+#scoreBoard {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 1px 1px 0px #FFFFFF;
+}
+
+#gameButton {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FF3B30;
+    border: none;
+    color: white;
+    font-size: 72px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 700;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+#gameButton:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(4px);
+}
+
+#buttonPrompt {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #555;
+    font-weight: 700;
+}
+
+#message {
+    margin-top: 30px;
+    color: #FF3B30;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.info-icon {
+    cursor: pointer;
+    position: fixed;
+    top: 32px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.info-icon img {
+    width: 24px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#infoPopup {
+    position: fixed;
+    top: 65px;
+    left: 20px;
+    background: #F3E9DD;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 200px;
+}
+
+#infoPopup p {
+    display: inline-block;
+    background-color: #E6D5C3;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+

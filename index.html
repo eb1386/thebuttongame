@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Button Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <div class="info-icon" onclick="toggleInfo()">
+        <img src="info-icon.png" alt="Info" />
+    </div>
+    <div id="infoPopup" class="hidden">
+        <p>Welcome to The Button Game, created by Evan Borodow. In this game, you simply press a button! However, with each passing click, the chance of you losing increases by 1%. Press the settings button to change the game's style.</p>
+    </div>
+    
+
+    <div class="settings-icon" onclick="toggleSettings()">
+        <span class="icon">&#9881;</span>
+    </div>
+
+    <div id="settingsMenu" class="hidden">
+        <button onclick="changeButtonColor('yellow')">Yellow</button>
+        <button onclick="changeButtonColor('purple')">Purple</button>
+        <button onclick="changeButtonColor('brown')">Brown</button>
+    </div>
+
+    <div id="gameContainer">
+        <div id="scoreBoard">
+            <div id="maxScore">Max 0</div>
+            <div id="totalClicks">Total 0</div>
+        </div>
+        
+        <button id="gameButton">0</button>
+        <div id="buttonPrompt">Press the button</div>        
+        <div id="message"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
