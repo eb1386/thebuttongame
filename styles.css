@@ -105,15 +105,11 @@ body {
 .info-icon {
     cursor: pointer;
     position: fixed;
-    top: 20px;
+    top: 24px;
     left: 20px;
     z-index: 1000;
 }
 
-.info-icon .settings icon {
-    font-size: 35px;
-    top: 20px;
-}
 
 .hidden {
     display: none;
