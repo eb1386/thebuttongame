@@ -1,3 +1,13 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    const savedBestScore = localStorage.getItem('bestScore');
+    if (savedBestScore !== null) {
+        maxScore = parseInt(savedBestScore, 10);
+        
+        document.getElementById('maxScore').textContent = 'Max ' + maxScore;
+    }
+});
+
+
 let chanceOfReset = 0;
 let maxScore = 0;
 let totalClicks = 0;
@@ -26,6 +36,15 @@ button.addEventListener("click", function() {
     }
     totalClicksDiv.textContent = `Total ${totalClicks}`;
 });
+
+function updateBestScore(newScore) {
+    
+    maxScore = newScore;
+
+    
+    localStorage.setItem('bestScore', newScore.toString());
+}
+
 
 function toggleSettings() {
     var settingsMenu = document.getElementById('settingsMenu');
